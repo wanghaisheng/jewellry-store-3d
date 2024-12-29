@@ -1,0 +1,75 @@
+.Annotation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 12px;
+  width: 12px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Annotation.active {
+  background-color: var(--active);
+}
+
+.Annotation::after .active {
+  border: 1px solid var(--active);
+}
+
+.Annotation::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  transform-origin: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 16px;
+  animation: growAndFade 1.4s ease-in-out infinite;
+}
+
+@keyframes growAndFade {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+/* .Annotation:hover {
+  transform: scale(0.7);
+} */
+
+.Annotation .tooltips {
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem 0.7rem;
+  background-color: rgba(var(--dark-rgb), 0.9);
+  border-radius: 10px;
+}
+
+.Annotation.active .tooltips {
+  opacity: 1;
+  pointer-events: all;
+}

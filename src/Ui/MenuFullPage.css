@@ -1,0 +1,58 @@
+.MenuFullPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  z-index: var(--z-fullscreen-menu);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--dark-rgb), 0.95);
+  font-family: 'stardom';
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.MenuFullPage .sub-menu {
+  line-height: 28px;
+}
+
+.MenuFullPage h2.sub-menu button {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.MenuFullPage .sub-menu button {
+  font-size: 1rem;
+  position: relative;
+}
+
+.MenuFullPage .sub-menu button::after {
+  content: '';
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
+.MenuFullPage .sub-menu.active button::after {
+  text-decoration: underline;
+  width: 100%;
+}
+
+.MenuFullPage.black {
+  background-color: rgba(var(--dark-rgb), 1);
+}
+
+@media (max-width: 640px) {
+  .MenuFullPage {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}

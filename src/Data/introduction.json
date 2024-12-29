@@ -1,0 +1,74 @@
+{
+  "links": [{ "externalUrl": "https://uclab.fh-potsdam.de/refa/", "linkValue": "Restaging Fashion" }],
+  "sections": [
+    {
+      "id": 1,
+      "title": "Telling stories about<br>historical dress",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "Garments",
+      "description": "Dress research draws on visual, documentary, and material evidence. Textiles as cultural artefacts though are challenging as regards their presentation in the museum because of their vulnerability to light and hence the exhibition span is rather short and they are mostly stored in flat boxes in museum depots. In a collaboration between the Textiles, Clothing and Jewelry collection of Germanisches Nationalmuseum Nuremberg and the project <a href='https://uclab.fh-potsdam.de/refa/' target='_blank'>Restaging Fashion</a> a total of fifteen historical clothing items were selected for digitization."
+    },
+    {
+      "id": 3,
+      "title": "",
+      "description": "Textiles are a challenging material for digital 3D reproduction; they are fragile, rich in detail and often difficult to stabilize. The 3D scanning strategy was adopted on site to the specific object characteristics. Data acquisition was carried out using the photogrammetric approach (Structure-from-Motion) on one hand and the Artec 3D Leo hand-held scanner on the other. The latter operates wirelessly and with its own light source. The processing of the photogrammetric data was done with Metashape and of the 3D-scanning data with Artec Studio. In cases where the data complemented each other well, the photogrammetric data was merged with the 3D body data captured by the scanner. As a result 15 models were digitized and published on Kompakkt."
+    },
+    {
+      "id": 4,
+      "title": "Interface design",
+      "description": "While 3D Model Viewers, such as Kompakkt or the Smithonian Voyager, offer a presentation and annotation mode, there is a desideratum for a narrative attached to the 3D Model. Envisioning a tool that enables a dynamic and fluid presentation of a 3D Model combined with a narrative, we created a free and reusable interface that allows researchers, experts or laypeople to enrich a 3D Model with information and embed it in a scenography that supports the narrative. </br>Hence the possibility of a narrative-driven animation of the garment models was created. The application ‘3D Stories’ allows different approaches: the user can either lean back and follow the story or select one of the highlights and be directed to the relevant paragraph. By using the ‘Explore’ button the user can roam the 3D Model on his or hers own terms"
+    },
+    {
+      "id": 5,
+      "title": "Background",
+      "description": "The project was implemented in a collaboration between the Centre for Contemporary and Digital History Luxembourg (C²DH) and the Urban Complexity Lab (UCLAB) at Potsdam University of Applied Sciences. Kirill Mitsurov and Daniele Guido (C²DH) created the interface and Sabine de Günther and Marian Dörk (UCLAB) provided the 3D Models and content for the stories."
+    },
+    {
+      "id": 6,
+      "title": "",
+      "description": "3D Stories is a freely reusable prototype based on open source software (React Vite, React Three Fiber, Theatre JS, Blender). You can find the technical components of the project on the following <a href='https://github.com/uclab-potsdam/3dstories' target='_blank'>GitHub repository</a>"
+    },
+    {
+      "id": 7,
+      "title": "Team",
+      "team": [
+        {
+          "id": 1,
+          "uni": "UCLAB",
+          "role": "Fashion History",
+          "img": "img/team/sabine_de_gunther.jpg",
+          "name": "Sabine de Günther",
+          "link": "https://uclab.fh-potsdam.de/people/sabine-de-guenther/"
+        },
+
+        {
+          "id": 2,
+          "uni": "C²DH",
+          "role": "UI/UX Design/Development",
+          "img": "img/team/kirill_mitsurov.jpg",
+          "name": "Kirill Mitsurov",
+          "link": "https://www.c2dh.uni.lu/people/kirill-mitsurov"
+        },
+        {
+          "id": 3,
+          "uni": "UCLAB",
+          "role": "Research Supervision",
+          "img": "img/team/marian_dork.jpg",
+          "name": "Marian Dörk",
+          "link": "https://uclab.fh-potsdam.de/people/marian-doerk/"
+        },
+        {
+          "id": 4,
+          "uni": "C²DH",
+          "role": "Development",
+          "img": "img/team/daniele_guido.jpg",
+          "name": "Daniele Guido",
+          "link": "https://www.c2dh.uni.lu/people/daniele-guido"
+        }
+      ]
+    }
+  ]
+}
